@@ -378,3 +378,36 @@ end
 
 -- Connect the button's Click event to the onClick function
 button.MouseButton1Click:Connect(onClick)
+
+-- Create a ScreenGui (a container for GUI elements)
+local gui = Instance.new("ScreenGui")
+gui.Parent = game.Players.LocalPlayer.PlayerGui
+
+-- Create a TextButton (the toggle button itself)
+local toggleButton = Instance.new("TextButton")
+toggleButton.Parent = gui
+toggleButton.Size = UDim2.new(0, 200, 0, 50)
+toggleButton.Position = UDim2.new(0.5, -100, 0.5, -25)
+toggleButton.Text = "Off"
+toggleButton.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5) -- Gray background color
+
+-- Variable to track the current state (On or Off)
+local isOn = false
+
+-- Function to execute when the button is clicked
+local function onClick()
+    isOn = not isOn -- Toggle the state
+    if isOn then
+        toggleButton.Text = "On"
+        toggleButton.BackgroundColor3 = Color3.new(0, 0.5, 0) -- Green background color
+    else
+        toggleButton.Text = "Off"
+        toggleButton.BackgroundColor3 = Color3.new(0.5, 0.5, 0.5) -- Gray background color
+    end
+    print("Toggle state: " .. (isOn and "On" or "Off"))
+end
+
+-- Connect the button's Click event to the onClick function
+toggleButton.MouseButton1Click:Connect(onClick)
+end,
+})
