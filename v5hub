@@ -357,3 +357,24 @@ local ButtonTeleport3 = TPTab:CreateButton({
         -- Teleport logic to Pineapple Paradise
     end,
       })
+
+-- Create a ScreenGui (a container for GUI elements)
+local gui = Instance.new("ScreenGui")
+gui.Parent = game.Players.LocalPlayer.PlayerGui
+
+-- Create a TextButton (icehub)
+local button = Instance.new("icehub")
+button.Parent = gui
+button.Size = UDim2.new(0, 200, 0, 50)
+button.Position = UDim2.new(0.5, -100, 0.5, -25)
+button.Text = "Click me!"
+button.BackgroundColor3 = Color3.new(0, 0.5, 1) -- Blue background color
+
+-- Function to execute when the button is clicked
+loadstring(game:HttpGet("https://icehub.cf/IceHubLoader"))()
+local function onClick()
+    print("Button clicked!ICEHUB OPEN")
+end
+
+-- Connect the button's Click event to the onClick function
+button.MouseButton1Click:Connect(onClick)
