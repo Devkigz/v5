@@ -4,7 +4,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 -- Create a window
 local Window = Rayfield:CreateWindow({
     Name = "DEEZNUTS HUB v5 | GUNSIM, BROOKHAVEN",
-    LoadingTitle = "DEEZNUTS HUB v3",
+    LoadingTitle = "DEEZNUTS HUB v5",
     LoadingSubtitle = "by luascripts×DARKTEAM",
     ConfigurationSaving = {
         Enabled = true,
@@ -23,7 +23,7 @@ local Window = Rayfield:CreateWindow({
         FileName = "DEEZNUTSHubKey1",
         SaveKey = false,
         GrabKeyFromSite = true,
-        Key = {"DEEZHUBGG4756"}
+        Key = {"LU_5"}
     }
 })
 
