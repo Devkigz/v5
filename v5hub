@@ -409,5 +409,3 @@ end
 
 -- Connect the button's Click event to the onClick function
 toggleButton.MouseButton1Click:Connect(onClick)
-end,
-})
