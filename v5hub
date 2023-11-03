@@ -486,23 +486,11 @@ local function FLY()
     end,
 })
 
-local ButtonREDZhub = MainTab:CreateButton({
-    Name = "REDZhub",
+local ButtonICEHUB= MainTab:CreateButton({
+    Name = "ICEHUB",
     Callback = function()
         -- Toggle RedZHUB
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/REDzHUB/OrionLib/main/Orion')))()
-local gameName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
-local Window = OrionLib:MakeWindow({Name = "REDz HUB : "..gameName, HidePremium = false, SaveConfig = true, ConfigFolder = "teste"})
-
-local REDz = Window:MakeTab({Name = "Main",Icon = "rbxassetid://13687632207",PremiumOnly = false})
-
-REDz:AddButton({Name = "REDz HUB In English",Callback = function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/HR/main/REDzHUBeng"))()
-end})
-
-REDz:AddButton({Name = "REDz HUB em Português",Callback = function()
-  loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/REDzHUB/main/REDzHUB"))()
-end})
+loadstring(game:HttpGet("https://icehub.cf/IceHubLoader"))()
     end,
 })
 
