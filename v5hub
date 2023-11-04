@@ -19,7 +19,7 @@ local Window = Rayfield:CreateWindow({
     KeySettings = {
         Title = "Key | DEEZNUT",
         Subtitle = "Key System",
-        Note = "Key In Discord Server",
+        Note = "Key In Discord Server key update on ever version update",
         FileName = "DEEZNUTSHubKey1",
         SaveKey = false,
         GrabKeyFromSite = true,
@@ -36,6 +36,7 @@ local ButtonInfiniteJump = MainTab:CreateButton({
     Name = "Infinite Jump Toggle",
     Callback = function()
         -- Infinite jump logic
+loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Jump.txt"))()
     end,
 })
 
@@ -489,33 +490,9 @@ local KickButton = KickSystemSection:CreateButton({
     Name = "Kick Player",
     Callback = function()
         -- Player kick logic
+
     end,
 })
-
--- Teleports Tab
-local TPTab = Window:CreateTab("Teleports", nil)
-
--- Teleport Buttons
-local ButtonTeleport1 = TPTab:CreateButton({
-    Name = "Starter Island",
-    Callback = function()
-        -- Teleport logic to Starter Island
-    end,
-})
-
-local ButtonTeleport2 = TPTab:CreateButton({
-    Name = "Pirate Island",
-    Callback = function()
-        -- Teleport logic to Pirate Island
-    end,
-})
-
-local ButtonTeleport3 = TPTab:CreateButton({
-    Name = "Pineapple Paradise",
-    Callback = function()
-        -- Teleport logic to Pineapple Paradise
-    end,
-      })
 
 -- Create a ScreenGui (a container for GUI elements)
 local gui = Instance.new("ScreenGui")
