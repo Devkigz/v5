@@ -3,8 +3,8 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- Create a window
 local Window = Rayfield:CreateWindow({
-    Name = "DEEZNUTS HUB v6 | GUNSIM, BROOKHAVEN",
-    LoadingTitle = "DEEZNUTS HUB v6",
+    Name = "DEEZNUTS HUB v6.1 | GUNSIM, BROOKHAVEN",
+    LoadingTitle = "DEEZNUTS HUB v6.1",
     LoadingSubtitle = "by luascripts×DARKTEAM",
     ConfigurationSaving = {
         Enabled = true,
@@ -17,13 +17,13 @@ local Window = Rayfield:CreateWindow({
     },
     KeySystem = true,
     KeySettings = {
-        Title = "Key | DEEZNUT",
+        Title = "Key | DEEZNUT /manor update",
         Subtitle = "Key System",
         Note = "Key In Discord Server key update on ever version update",
         FileName = "DEEZNUTSHubKey1",
         SaveKey = false,
         GrabKeyFromSite = true,
-        Key = {"LU_6"}
+        Key = {"NOPASS"}
     }
 })
 
@@ -490,16 +490,14 @@ local KickButton = KickSystemSection:CreateButton({
     Name = "NIGGA ITS NOT KICK",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Devkigz/v5/main/v5hub",true))(); 
-
     end,
 })
 
-local ButtonICEHUB= MainTab:CreateButton({
-    Name = "DISTROY GUI",
-    Callback = function()
-        -- Toggle RedZHUB
-
-    end,
+local Button = Welcome:CreateButton({
+   Name = "Close GUI/FUCK GUI SO HARD(BY_NEKOLA TESLA😏🕊️🥴",
+   Callback = function()
+        Rayfield:Destroy()
+   end,
 })
 
 -- Create a TextButton (icehub)
